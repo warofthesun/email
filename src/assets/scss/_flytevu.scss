@@ -1,0 +1,55 @@
+.flytevu {
+  h2 {
+    color: $primary-color;
+    font-weight: 100 !important;
+
+    @media only screen and (max-width: $global-breakpoint) {
+      font-size: $mobile-h2-font-size !important;
+    }
+  }
+
+  .headshot {
+    @media only screen and (max-width: $global-breakpoint) {
+      padding-bottom: 20px;
+    }
+  }
+
+  .content {
+    &__background {
+      background-color: $light-gray;
+    }
+  }
+
+  p {
+    @media only screen and (max-width: $global-breakpoint) {
+      font-size: $mobile-font-size !important;
+    }
+  }
+
+  .bio {
+    text-align: center;
+    font-size: 18px;
+    padding: .5em 0;
+
+    @media only screen and (max-width: $global-breakpoint) {
+      font-size: 24px !important;
+      line-height: 34px !important;
+    }
+  }
+
+  td {
+    hyphens: none;
+  }
+
+  th.columns {
+    padding-bottom: 0px;
+  }
+}
+
+.body {
+  img {
+    @media only screen and (max-width: $global-breakpoint) {
+      max-width: 100% !important;
+    }
+  }
+}
