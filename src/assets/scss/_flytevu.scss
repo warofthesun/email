@@ -17,6 +17,20 @@
   .content {
     &__background {
       background-color: $light-gray;
+
+      &__blue {
+        background-color: $primary-color;
+
+        h2 {
+          color: $secondary-color;
+        }
+
+        .subhead {
+          color: #ffffff;
+          font-weight: 400;
+          font-size: 1.3em;
+        }
+      }
     }
   }
 
