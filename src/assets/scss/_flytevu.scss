@@ -1,10 +1,38 @@
+table.body .container.flytevu {
+  @media only screen and (max-width: $global-breakpoint) {
+    width: 100% !important;
+  }
+}
+
 .flytevu {
+
+  .alternate {
+    h2 {
+      font-size: 18px;
+      margin-bottom: 5px;
+
+      @media only screen and (max-width: $global-breakpoint) {
+        margin-top: 15% !important;
+      }
+    }
+    p.bio {
+      color: $secondary-color;
+      font-size: 9px;
+      line-height: 12px;
+      padding: 0 10px !important;
+
+      @media only screen and (max-width: $global-breakpoint) {
+        font-size: 11px !important;
+      }
+    }
+  }
+
   h2 {
     color: $primary-color;
     font-weight: 100 !important;
 
     @media only screen and (max-width: $global-breakpoint) {
-      font-size: $mobile-h2-font-size !important;
+      //font-size: $mobile-h2-font-size !important;
     }
   }
 
@@ -14,12 +42,36 @@
     }
   }
 
+  .bg-white {
+    background-color: #ffffff;
+  }
+
+  .padding-bottom {
+    &--remove {
+      padding-bottom: 0px !important;
+    }
+  }
+
+  .margin-bottom {
+    margin-bottom: 40px;
+  }
+
   .content {
     &__background {
       background-color: $light-gray;
 
+      &__alternate {
+        background-color: $alternate-color;
+
+        p {
+          color: #ffffff;
+        }
+      }
+
       &__blue {
         background-color: $primary-color;
+
+
 
         h2 {
           color: $secondary-color;
@@ -46,8 +98,8 @@
     padding: .5em 0;
 
     @media only screen and (max-width: $global-breakpoint) {
-      font-size: 24px !important;
-      line-height: 34px !important;
+      //font-size: 24px !important;
+      //line-height: 34px !important;
     }
   }
 
